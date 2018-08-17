@@ -92,7 +92,6 @@ class NovalnetPaymentMethod extends PaymentMethodService
             $app = pluginApp(Application::class);
             $logoUrl = $app->getUrlPath('novalnet') .'/images/icon.png';
         } 
-        $this->getLogger(__METHOD__)->error('Novalnet::TESTLOG', $logoUrl);
         return $logoUrl;
     }
 
