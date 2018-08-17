@@ -72,6 +72,14 @@
                     "label": "Config.descriptionLabel",
                     "options": {}
                 },
+                "company_logo": {
+                    "type": "inputFile",
+                    "required": false,
+                    "label": "Config.headerCompanyLogoLabel",
+                    "options": {
+                        "defaultValue": "images/icon.png"
+                    }
+                },
                 "on_hold": {
                     "type": "inputText",
                     "required": false,
