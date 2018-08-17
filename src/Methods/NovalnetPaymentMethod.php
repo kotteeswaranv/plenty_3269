@@ -85,12 +85,15 @@ class NovalnetPaymentMethod extends PaymentMethodService
      * @return string
      */
     public function getIcon():string
-    {        
-        /** @var Application $app */
-        $app = pluginApp(Application::class);
-        $this->getLogger(__METHOD__)->error('Novalnet::TESTLOG', $app->getUrlPath('novalnet'));
-        $this->getLogger(__METHOD__)->error('Novalnet::TESTLOG', $this->configRepository->get('Novalnet.company_logo'));
-        return $app->getUrlPath('novalnet') .'/images/icon.png';
+    {
+        $logoUrl = $this->configRepository->get('Novalnet.payment_logo');
+        if($logoUrl == 'images/icon.png'){
+            /** @var Application $app */
+            $app = pluginApp(Application::class);
+            $logoUrl = $app->getUrlPath('novalnet') .'/images/icon.png';
+        } 
+        $this->getLogger(__METHOD__)->error('Novalnet::TESTLOG', $logoUrl);
+        return $logoUrl;
     }
 
     /**
