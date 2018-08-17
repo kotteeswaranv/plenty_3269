@@ -72,7 +72,7 @@
                     "label": "Config.descriptionLabel",
                     "options": {}
                 },
-                "company_logo": {
+                "payment_logo": {
                     "type": "inputFile",
                     "required": false,
                     "label": "Config.headerCompanyLogoLabel",
