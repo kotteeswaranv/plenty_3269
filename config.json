@@ -75,7 +75,7 @@
                 "payment_logo": {
                     "type": "inputFile",
                     "required": false,
-                    "label": "Config.headerCompanyLogoLabel",
+                    "label": "Config.paymentLogoLabel",
                     "options": {
                         "defaultValue": "images/icon.png"
                     }
