@@ -19,6 +19,8 @@ use Plenty\Modules\Payment\Method\Contracts\PaymentMethodService;
 use Plenty\Plugin\Application;
 use Novalnet\Helper\PaymentHelper;
 
+use Plenty\Plugin\Log\Loggable;
+
 /**
  * Class NovalnetPaymentMethod
  *
@@ -26,6 +28,7 @@ use Novalnet\Helper\PaymentHelper;
  */
 class NovalnetPaymentMethod extends PaymentMethodService
 {
+    use Loggable;
     /**
      * @var ConfigRepository
      */
@@ -82,9 +85,11 @@ class NovalnetPaymentMethod extends PaymentMethodService
      * @return string
      */
     public function getIcon():string
-    {
+    {        
         /** @var Application $app */
         $app = pluginApp(Application::class);
+        $this->getLogger(__METHOD__)->error('Novalnet::TESTLOG', $app->getUrlPath('novalnet'));
+        $this->getLogger(__METHOD__)->error('Novalnet::TESTLOG', $this->configRepository->get('Novalnet.company_logo'));
         return $app->getUrlPath('novalnet') .'/images/icon.png';
     }
 
