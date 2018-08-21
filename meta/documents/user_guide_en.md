@@ -140,7 +140,7 @@ To display the payment transaction details on the order confirmation page, perfo
 
 ##### Displaying transaction details:
 
-1. Go to **Plugins » Content**.
+1. Go to **CMS » Container links**.
 3. Go to the **Novalnet payment details** area.
 4. Activate the container **Order confirmation: Additional payment information**.
 5. **Save** the settings.<br />→ The payment transaction details will be displayed on the order confirmation page.
