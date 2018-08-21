@@ -136,7 +136,7 @@ Zur Einrichtung rufen Sie den Menüpunkt **Plugins -> Plugin-Übersicht -> Noval
 
 Um die Transaktionsdetails anzeigen zu lassen, befolgen Sie bitte die folgenden Schritte.
 
-1. Navigieren Sie zum Menüpunkt **Plugins » Content**.
+1. Navigieren Sie zum Menüpunkt **CMS » Container-Verknüpfungen**.
 2. Navigieren Sie zum Bereich **Novalnet payment details**.
 3. Aktivieren Sie das Feld **Order confirmation: Additional payment information**.
 4. Drücken Sie auf **Speichern**.<br />→ Die Zahlungsdetails werden danach auf der Bestellbestätigungsseite angezeigt.
