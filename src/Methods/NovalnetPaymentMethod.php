@@ -19,8 +19,6 @@ use Plenty\Modules\Payment\Method\Contracts\PaymentMethodService;
 use Plenty\Plugin\Application;
 use Novalnet\Helper\PaymentHelper;
 
-use Plenty\Plugin\Log\Loggable;
-
 /**
  * Class NovalnetPaymentMethod
  *
@@ -28,7 +26,6 @@ use Plenty\Plugin\Log\Loggable;
  */
 class NovalnetPaymentMethod extends PaymentMethodService
 {
-    use Loggable;
     /**
      * @var ConfigRepository
      */
