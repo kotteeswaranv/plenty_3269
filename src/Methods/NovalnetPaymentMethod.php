@@ -26,6 +26,7 @@ use Novalnet\Helper\PaymentHelper;
  */
 class NovalnetPaymentMethod extends PaymentMethodService
 {
+    
     /**
      * @var ConfigRepository
      */
