@@ -1,5 +1,11 @@
 # Release Notes for Novalnet
 
+## v1.0.3 (2018-08-21)
+
+### New
+
+- Payment logo customization option implemented
+
 ## v1.0.2 (2018-06-01)
 
 ### New
